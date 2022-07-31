@@ -1,0 +1,120 @@
+.form{
+    margin-top: 100px;
+    margin-left: 5vw;
+  }
+  textarea::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  textarea::-webkit-scrollbar-track {
+   background-color: transparent;
+    border-radius: 100px;
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, #2f00ff 0%, #2b2eff 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  }
+input{
+    font-family: sans-serif;
+}
+textarea{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #4340ff;
+    border: 5px solid #adacf8;
+    margin: 20px;
+    width: 80vw;
+    height: 200px;
+    padding: 10px;
+}
+input[type=text]{
+    font-size: 20px;
+    background-color: #4340ff;
+    border: 5px solid #adacf8;
+    margin: 20px;
+    margin-bottom: 60px;
+    width: 60vw;
+    padding: 10px;
+}
+input, textarea{
+  color: white;
+  border-radius: 20px;
+}
+input:focus, textarea:focus{
+  outline: 0;
+  border: 5px solid aquamarine;
+}
+.pytanie{
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  word-wrap: normal;
+  text-align: left;
+  text-indent: 0;
+}
+#addpage-button{
+  width: 150px;
+  height: 50px;
+  margin: 20px;  
+  border-radius: 10px;
+  background-color: transparent;
+  border:  5px #adacf8 solid;
+  color: white;
+  font-size: 20px;
+}
+.success{
+  font-weight: bold;
+  font-size: clamp(40px,3vw,30px);
+  text-align: center;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+input[type=file]{
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 0;
+}
+#iloscStron{
+  display: none;
+}
+.loading{
+  animation: rotate 1s infinite;
+}
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(350deg);}
+}
+.contact-form{
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+button[type=submit]{
+  background-color: transparent;
+  color: aquamarine;
+  border: 3px aquamarine solid;
+  font-size: 20px;
+}
+.drop-files-container{
+  width: clamp(200px, 80vw, 1000px);
+  height: 300px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: #4340ff dashed 8px;
+}
+#files{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 150px;
+  padding-left: 30%;
+
+}

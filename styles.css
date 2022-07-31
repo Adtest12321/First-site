@@ -1,0 +1,451 @@
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+body{
+  background: url("tlo-tip.png");;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+.nav-order{
+  border: 3px aquamarine solid;
+  padding: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: aquamarine;
+}
+a{
+  transition: all .5s ease;
+  color: aquamarine;
+  text-decoration: none;
+}
+.close-menu-mobile-hidden{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #1e1e24b4;
+  z-index: 6;
+  border: 0;
+}
+.close-menu-mobile{
+  display: block;
+}
+.mobile-nav{
+  display: none;
+}
+.nav-hidden{
+  transform: translateY(-500px);
+}
+.buttons{
+  margin-right: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.buttons a:hover{
+  color: rgba(255, 255, 255, 0.493);
+}
+.content{  
+  width: 100%;
+}
+.one{
+  width: 400px;
+}
+/*Section 1*/
+#section1{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 0;
+  background-position-x: 100%;
+  background-image: url("gradient3.png");
+  background-size: cover;
+  padding-top: 10vh;
+}
+.content-section1{
+  margin: 0;
+  padding: 100px;
+  max-height: 600px;
+}
+.content-section1-text{
+  max-width: 400px;
+}
+.content-section1-button{
+  margin-bottom: 50px;
+  font-size: 25px;
+  margin-top: 30px;
+  background-color: transparent;
+  color: aquamarine;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border: 3px aquamarine solid;
+}
+/*Section 2*/
+
+#section2{
+  margin-top: 40px;
+  background: url("tlo-tip.png");
+}
+.content-section2{
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.step span > p{
+  font-size: clamp(20px,3vw,25px);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.step span:nth-child(1) > p{
+  font-size: clamp(20px, 10vw ,30px);
+  color: aquamarine;
+}
+  .tip{
+    display: inline-block;
+    width: clamp(300px, 65vw, 600px);
+  }
+  .step{
+    margin-block: 60px;
+    width: minmax(300px,90vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-text{
+    min-width: 300px;
+    margin-right: 0vw;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+
+/*Section 3*/
+#section3{
+  padding-bottom: 20px;
+  margin: 0;
+  background-position-x: 100%;
+  background-image: url("tlo2-kopia.png");
+  background-size: cover;
+  padding-top: 0px;
+}
+section > h1{
+  text-align: center;
+  margin: 0;
+}
+section > p{
+  font-size: 20px;
+  text-align: center;
+  opacity: .7;
+  margin-bottom: 40px;
+}
+.bundles{
+  margin-left: auto;
+  clear: both;
+  justify-self: center;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 1800px) { /*fill size grid*/
+  .bundles{
+    grid-template-columns: repeat(4, 400px);
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 1800px) { /*wrapping grid*/
+  .bundles{
+    grid-template-columns: repeat(2, 390px);
+    gap:150px;
+  }
+}
+@media only screen and (max-width: 952px) {
+  .bundles{
+  grid-template-columns: 80vw;
+  }
+  
+}
+.bundle{
+  border-radius: 50px;
+  background-color: #4340ff;
+  outline: 10px solid #7fffd4;
+  transition: all .5s;
+  height: minmax(400px,fit-content);
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 40px;
+}
+.bundle:hover, .bonus>div:hover{
+  outline: 5px solid #4340ff;
+}
+.name{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: clamp(30px,5vw, 40px);
+  color: aquamarine;
+  text-transform: capitalize;
+}
+.price{
+  font-weight: bold;
+  color: aquamarine;
+  font-size: 40px;
+}
+.offer{
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  
+}
+.nav{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: url("tlo-tip.png");
+  background-position: 50%;
+}
+
+/* Large screens */
+@media only screen and (min-width: 800px) {
+  .nav{
+    top: 0;
+    right: 0;
+    overflow-wrap: normal;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    transition: transform .5s ease;
+    white-space: nowrap;
+  }
+  h1{
+    color: white;
+    margin-bottom: 10px;
+    font-size: clamp(30px,7vh, 40px);
+  }
+  p{
+    margin: 0;
+    color: white;
+    font-size: clamp(20px,5vh, 30px);
+  }
+  .logo{
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 40px;
+    margin: 20px;
+  }
+  .buttons a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+/*Medium size*/
+@media only screen and (max-width: 800px) {
+  .nav{
+    top: 0;
+    right: 0;
+    overflow-wrap: normal;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    transition: transform .5s ease;
+    white-space: nowrap;
+  }
+  h1{
+    color: white;
+    margin-bottom: 10px;
+    font-size: clamp(30px,7vh, 40px);
+  }
+  p{
+    margin: 0;
+    color: white;
+    font-size: clamp(20px,5vh, 30px);
+  }
+  .logo{
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+  }
+  .buttons a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar{display: none;}
+    .nav{
+      top: 0;
+      right: 0;
+      position: fixed;
+      width: 100vw;
+      display: flex;
+      justify-content:left;
+      align-items: center;
+      transition: transform .5s ease;
+      white-space: nowrap;
+    }
+    h1{
+      color: white;
+      margin-bottom: 5px;
+      font-size: clamp(20px,5vh, 30px);
+    }
+    p{
+      margin: 0;
+      color: white;
+      font-size: clamp(20px,5vh, 25px);
+    }    
+    .logo{
+      font-family: roboto, sans-serif;
+      color: white;
+      font-size: 25px;
+      margin: 10px;
+      margin-right: 50px;
+    }
+    .buttons a{
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      text-transform: capitalize;
+      margin-left: 2vw;
+      margin-right: 2vw;
+    }
+    .content-section1{
+      padding: 10px;
+    }
+    .one{
+      width: 90vw;
+    }
+  }
+  /*MOBILE*/
+  @media only screen and (max-width: 560px) {
+    ::-webkit-scrollbar{display: none;}
+    .mobile-nav{
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      width: 100vw;
+      background-color: #2724e8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      z-index: 10;
+    }
+    .menu-open{
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background-color: transparent;
+      border: #ffffff 2px solid;
+      color:#ffffff;
+    }
+    .nav{
+      top: 0;
+      right: 0;
+      position: fixed;
+      width: 100vw;
+      height: fit-content;
+      display: flex;
+      align-items:flex-start;
+      flex-direction: column;
+      transition: all .25s ease;
+      white-space: nowrap;
+      z-index: 9;
+    }
+    h1{
+      color: white;
+      margin-bottom: 5px;
+      font-size: clamp(20px,5vh, 30px);
+    }
+    p{
+      margin: 0;
+      color: white;
+      font-size: clamp(20px,5vh, 25px);
+    }    
+    .logo{
+      font-family: roboto, sans-serif;
+      color: white;
+      font-size: 25px;
+    }
+    .buttons{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .buttons a{
+      font-size: 18px;
+      margin-block: 5px;
+      border-bottom: 1px solid white;
+      font-size: large;
+      text-decoration: none;
+      color: white;
+      text-transform: capitalize;
+    }
+    .nav-order{
+      border: 0px aquamarine solid;
+      padding: 0;
+    }
+  }
+.bonus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.host, .database{
+  width: 80vw;
+  height: 100px;
+  outline: 5px aquamarine solid;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #4340ff;
+  transition: all .25s ease-in;
+}
+.bonus > p{
+  color: aquamarine;
+  text-align: left;
+  width: 90vw;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-position: bottom;
+  background-image: url("./layer1.svg");
+}
